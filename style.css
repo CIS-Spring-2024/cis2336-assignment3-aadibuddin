@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.logo {
+    font-family: 'Oswald';
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+nav, ul, li {
+    list-style-type: none;
+}
+
+nav, ul, li, a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+    opacity: 80%;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover:after {
+   width: 100%;
+}
+
+.home {
+    padding-bottom: 7.5px;
+    border-bottom: 3px white solid;
+
+}
+
+.navbar .home:hover:after {
+    width: 0%;
+}
+
+main {
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+main img {
+    float: left;
+    padding: 0 25px;
+}
+
+main p {
+    padding-top: 50px;
+    padding-right: 50px;
+    font-size: larger;
+    font-family: 'Fira Sans';
+}
+
+footer {
+    margin-top: 250px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer a {
+    color: blue;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1372px) {
+    .navbar a {
+        position: relative;
+        font-size: 15px;
+        letter-spacing: 0.7px;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+@media only screen and (max-width: 1305px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 15px;
+    }
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+    .navbar a:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    .navbar .breakfast:hover:after {
+        width: 100%;
+     }
+     .navbar .lunch:hover:after {
+         width: 100%;
+     }
+     .navbar .dinner:hover:after {
+         width: 100%;
+     }
+     .navbar .dessert:hover:after {
+         width: 100%;
+     }
+     .navbar .about:hover:after {
+         width: 100%;
+     }
+}
+
+@media only screen and (max-width: 1251px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 15px;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 1202px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 15px;
+    }
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 1197px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 2px;
+    }
+    .logo img {
+        width: 27px;
+        height: 27px;
+    }
+    .navbar a {
+        position: relative;
+        font-size: 12px;
+        letter-spacing: 0.7px;
+        font-family: 'Poppins', sans-serif;
+    }
+    main img {
+        width: 500px;
+    }
+    main p {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 1127px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 27px;
+        height: 27px;
+    }
+}
+
+@media only screen and (max-width:1092px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width:1090px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+    main img {
+        width: 400px;
+    }
+    main p {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 1081px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .logo {
+        font-family: 'Oswald';
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 1px;
+    }
+    .logo img {
+        width: 23px;
+        height: 23px;
+    }
+}
